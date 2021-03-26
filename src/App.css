@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: rgb(58, 58, 58);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body::after {
+  content: "";
+  background-image: url(./image/food-bg.jpeg);
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.nav-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100px;
+}
+.logo {
+  width: 90px;
+  margin-left: 50px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-btn a {
+  font-weight: bold;
+  color: rgb(15, 164, 223);
+}
+
+.nav-container ul li a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.nav-bar {
+  margin-left: -70rem;
+  font-size: large;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.btn-container button {
+  font-weight: bold;
+  background-color: #ffc506;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  /* width: 200px; */ /*method 1*/
+  padding: 15px 32px;
+  margin: 20px;
+  /* flex-basis: 200px; */ /*method2*/
+  flex: 1; /*method 3*/
+}
+
+.banner-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.banner-left-col {
+  border: none;
+  background-color: #7bb8bd;
+  width: 60em;
+  height: 25em;
+  background-image: url(./image/food-bg.jpeg);
+
+}
+
+.banner-left-col h1,
+p {
+  background-color: #ffc506;
+  width: fit-content;
+  margin: 10px;
+  padding: 5px;
+
+}
+
+.banner-right-col {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.banner-right-col .cta1,
+.cta2 {
+
+  background-color: #ffc506;
+  height: 190px;
+  text-align: center;
+}
+
+.cta1,
+.cta2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 30px;
+}
